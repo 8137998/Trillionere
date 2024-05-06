@@ -1,0 +1,59 @@
+html {
+    font-size: 14px;
+    
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+#xyz :hover .dropdown-item {
+    display: block
+}
+
+header {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+footer {
+    background-color: #131924;
+}
+
+    footer h5 {
+        color: #c827fa;
+    }
+
+.footer-description {
+    font-family: 'Roboto', sans-serif;
+    color: #eedc06;
+}
+
+.search-button, .email-button {
+    border-color: #c827fa;
+    background-color: #c827fa;
+    color: white
+}
+.readmore-btn{
+    position:absolute;
+    bottom:2%;
+}
+.readmore-btn-onImg {
+    position: absolute;
+    top: 308px;
+    left:-10px;
+}
+/*#listings-container .card{
+    display: none;
+}*/

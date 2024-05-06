@@ -1,0 +1,40 @@
+﻿@using System.Web;
+@model IEnumerable<Trillianere.Models.Story>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row  row-cols-1 row-cols-md-3 g-4" id="listings-container">
+    @{
+        int i=1;
+     }
+    @foreach (var item in Model)
+    {
+            <div class="card px-0 border-0" data="@i" >
+                <div class="mx-2">
+                    <img src="~/lib/images/@item.ImageId" class=" rounded-3 card-img-top" alt="@item.ImageAltText" height="380px" style="object-fit:cover">
+                    <h5 class="card-title pt-4">@item.Title</h5>
+                    <p class="card-text pb-5">@item.Description</p>
+                    <a href="#" class="btn readmore-btn btn-primary">ReadMore</a>
+                    <div class="card-img-overlay readmore-btn-onImg" style="">
+                        <button class="rounded-3  p-3" style="background-color:#FFFA22;border:none">Read More</button>
+                    </div>
+                </div>
+            </div>
+            i++;
+    }
+</div>
+<div class="d-grid my-4 col-2 mx-auto">
+    <button id="loadMore" class="px-1 py-2 btn btn-primary border-0 load-more-btn" style="background-color:#c827fa" type="button">LOAD MORE</button>
+</div>
+
+
+
+
+
+
+
+
+
